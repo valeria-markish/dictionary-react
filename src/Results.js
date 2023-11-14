@@ -1,5 +1,6 @@
 import React from "react";
 import Meanings from "./Meanings.js";
+import Photos from "./Photos.js";
 
 export default function Results(props) {
   if (props.result) {
@@ -23,6 +24,7 @@ export default function Results(props) {
               }
             })}
           </div>
+          <Photos word={props.word} />
         </div>
       );
     } else {
