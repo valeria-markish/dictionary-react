@@ -22,20 +22,20 @@ export default function Form(props) {
     <div>
       <form onSubmit={handleSubmit}>
         <div className="row d-flex justify-content-center">
-          <div className="col-4 mt-1">
+          <div className="col-9">
             <input
               type="search"
               placeholder="Enter a word..."
-              className="from-control w-100"
+              className="form-control-lg w-100 search"
               autoFocus="on"
               onChange={handleWordChange}
             ></input>
           </div>
-          <div className="col-2">
+          <div className="col-3 mt-1">
             <input
               type="submit"
               value="Search"
-              className="btn btn-secondary w-100"
+              className="btn button p-2 w-100"
             ></input>
           </div>
         </div>
