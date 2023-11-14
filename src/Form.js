@@ -3,7 +3,6 @@ import axios from "axios";
 
 export default function Form(props) {
   function handleResponse(response) {
-    console.log(response.data);
     props.setResult(response.data);
   }
   function search() {

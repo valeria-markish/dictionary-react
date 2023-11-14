@@ -3,7 +3,7 @@ import Results from "./Results.js";
 import Form from "./Form.js";
 
 export default function Dictionary() {
-  const [word, setWord] = useState(null);
+  const [word, setWord] = useState("");
   const [result, setResult] = useState(null);
 
   return (
@@ -16,7 +16,7 @@ export default function Dictionary() {
           <small>E.g. book, moon, sunset, party</small>
         </div>
       </div>
-      <Results result={result} />
+      <Results result={result} word={word} />
     </div>
   );
 }
