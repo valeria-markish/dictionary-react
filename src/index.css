@@ -19,6 +19,7 @@ body {
   color: var(--fourth-color);
   padding: 30px;
   margin-bottom: 20px;
+  box-shadow: 0px 0px 14px 1px rgba(22, 49, 114, 0.6);
 }
 h1 {
   font-family: "Vollkorn", serif;
@@ -60,6 +61,11 @@ p {
   color: var(--third-color);
   text-decoration: underline;
 }
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
 footer {
   font-size: 14px;
   position: relative;
@@ -86,6 +92,10 @@ a {
   }
   .synonyms {
     margin-right: 10px;
+  }
+  .photo-gallery {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
   }
   .search {
     font-size: 15px;
